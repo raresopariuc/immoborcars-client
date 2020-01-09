@@ -1,0 +1,151 @@
+.apartments-container {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+}
+
+.apartmentbox-content {
+    margin-bottom: 30px;
+    padding: 10px 15px 20px 15px;
+    letter-spacing: .01em;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    background-color: #fff;
+}
+
+.apartmentbox-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.apartmentbox-title {
+    width: 90%;
+    font-weight: 500;
+    font-size: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.apartmentbox-creator-info {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.apartmentbox-creator-info .creator-link {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.apartmentbox-creator-info .creator-link:hover .apartmentbox-creator-name {
+    color: #1890ff;
+    text-decoration: underline;
+}
+
+.apartmentbox-creator-avatar {
+    float: left;
+    margin-top: 7px;
+    margin-right: 7px;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 24px;
+}
+
+.apartmentbox-creator-avatar > * {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.apartmentbox-creator-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.apartmentbox-creator-username {
+    color: #657786;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.apartmentbox-creation-date {
+    display: block;
+    color: #657786;
+    font-size: 11px;
+}
+
+.apartmentbox-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.apartmentbox-image {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    flex:2;
+}
+
+.apartmentbox-image img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.apartmentbox-image .img {
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+.apartmentbox-body ul {
+    flex:1;
+    list-style: none;
+    margin: 0;
+}
+
+.apartmentbox-body li:last-child {
+    font-size: 18px;
+    padding-top: 45px;
+}
+
+.apartmentbox-options-icon {
+    font-size: 30px;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .apartmentbox-title {
+        font-size: 18px;
+    }
+
+    .apartmentbox-body {
+        display:block;
+    }
+
+    .apartmentbox-image {
+        width: 100%;
+    }
+
+    .apartmentbox-body ul {
+        columns: 2;
+        margin-top: 10px;
+        padding-inline-start: 0;
+    }
+
+    .apartmentbox-body li:last-child {
+        font-size: 15px;
+        padding-top: 20px;
+    }
+}

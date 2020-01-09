@@ -1,0 +1,151 @@
+.houses-container {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+}
+
+.housebox-content {
+    margin-bottom: 30px;
+    padding: 10px 15px 20px 15px;
+    letter-spacing: .01em;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    background-color: #fff;
+}
+
+.housebox-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.housebox-title {
+    width: 90%;
+    font-weight: 500;
+    font-size: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.housebox-creator-info {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.housebox-creator-info .creator-link {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.housebox-creator-info .creator-link:hover .housebox-creator-name {
+    color: #1890ff;
+    text-decoration: underline;
+}
+
+.housebox-creator-avatar {
+    float: left;
+    margin-top: 7px;
+    margin-right: 7px;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 24px;
+}
+
+.housebox-creator-avatar > * {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.housebox-creator-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.housebox-creator-username {
+    color: #657786;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.housebox-creation-date {
+    display: block;
+    color: #657786;
+    font-size: 11px;
+}
+
+.housebox-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.housebox-image {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    flex:2;
+}
+
+.housebox-image img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.housebox-image .img {
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+.housebox-body ul {
+    flex:1;
+    list-style: none;
+    margin: 0;
+}
+
+.housebox-body li:last-child {
+    font-size: 18px;
+    padding-top: 45px;
+}
+
+.housebox-options-icon {
+    font-size: 30px;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .housebox-title {
+        font-size: 18px;
+    }
+
+    .housebox-body {
+        display:block;
+    }
+
+    .housebox-image {
+        width: 100%;
+    }
+
+    .housebox-body ul {
+        columns: 2;
+        margin-top: 10px;
+        padding-inline-start: 0;
+    }
+
+    .housebox-body li:last-child {
+        font-size: 15px;
+        padding-top: 20px;
+    }
+}

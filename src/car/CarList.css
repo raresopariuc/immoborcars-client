@@ -1,0 +1,14 @@
+cars-and-search-container {
+    width:100%;
+}
+
+.no-cars-found {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.load-more-cars {
+    text-align: center;
+    margin-bottom: 40px;
+}

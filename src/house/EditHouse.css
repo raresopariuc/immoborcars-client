@@ -1,0 +1,35 @@
+.page-title {
+    margin-top: 10px;
+}
+
+.image-upload .uploadPictureContainer {
+    width: 15% !important;
+    margin: 2% !important;
+    padding: 0 !important;
+}
+
+.image-upload .deleteImage {
+    background: #000 !important;
+    font-size: 15px !important;
+    font-weight: lighter !important;
+    line-height: 23px !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.image-upload .fileContainer {
+    box-shadow: none !important;
+}
+
+.ant-form-item-control {
+    text-align: center;
+}
+
+.filepond--item {
+    width: calc(33.3% - .5em);
+}
+
+.filepond--panel-root {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+}

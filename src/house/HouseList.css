@@ -1,0 +1,14 @@
+houses-and-search-container {
+    width:100%;
+}
+
+.no-houses-found {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.load-more-houses {
+    text-align: center;
+    margin-bottom: 40px;
+}
